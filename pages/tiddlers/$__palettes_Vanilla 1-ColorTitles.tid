@@ -1,6 +1,6 @@
 created: 20140419103917836
 description: Pale and unobtrusive
-modified: 20140421112601041
+modified: 20141110140206210
 name: Vanilla 1 Colored TItles
 tags: $:/tags/Palette
 title: $:/palettes/Vanilla 1-ColorTitles
@@ -92,7 +92,7 @@ tiddler-info-tab-background: #f8f8f8
 tiddler-link-background: <<colour background>>
 tiddler-link-foreground: <<colour primary>>
 tiddler-subtitle-foreground: #c0c0c0
-tiddler-title-foreground: #ed0a18
+tiddler-title-foreground: #8ccbff
 toolbar-new-button: 
 toolbar-options-button: 
 toolbar-save-button: 
