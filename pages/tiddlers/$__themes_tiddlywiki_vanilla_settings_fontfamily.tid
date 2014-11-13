@@ -1,6 +1,6 @@
 created: 20141110135241813
-modified: 20141113113139100
+modified: 20141113123356473
 title: $:/themes/tiddlywiki/vanilla/settings/fontfamily
 type: text/vnd.tiddlywiki
 
-"Roboto", "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+"proxima-nova-alt", "Roboto", "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
