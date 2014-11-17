@@ -1,0 +1,18 @@
+created: 20141011174838450
+modified: 20141117012103155
+tags: [[wiki list]]
+title: Github URLs
+type: text/vnd.tiddlywiki
+
+| !wiki folder  | !Github Site | !Github Repository   |
+| iani          | http://iani.github.io/               | http://github.com/iani/iani.github.com                |
+| tw5square     | http://iani.github.io/tw5square/     | http://github.com/iani/tw5square      |
+| embedInStream | http://iani.github.io/embedInStream/ | http://github.com/iani/embedInStream  |
+| performigrations       | http://iani.github.io/performigrations/       | http://github.com/iani/performigrations        |
+
+!! Obsolete:
+
+| !wiki folder  | !Github Site | !Github Repository   |
+| sudel-a       | http://iani.github.io/sudel-a/       | http://github.com/iani/sudel-a  |
+| sudel-b       | http://iani.github.io/sudel-b/       | http://github.com/iani/sudel-b        |
+| sandbox       | http://iani.github.io/sandbox/       | http://github.com/iani/sandbox        |
