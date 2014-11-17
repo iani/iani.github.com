@@ -1,6 +1,13 @@
 created: 20141117010234083
-modified: 20141117010316674
+modified: 20141117094443450
 tags: [[Web Tools]]
 title: Website Development Platforms
 type: text/vnd.tiddlywiki
 
+See also: [[Static Site Generator Reviews]].
+
+<<tabs "[tag[Website Development Platforms]]" "" "" "tc-vertical">>
+
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Website Development Platforms">>
+</div>
