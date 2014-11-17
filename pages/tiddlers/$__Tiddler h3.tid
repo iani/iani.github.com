@@ -1,0 +1,7 @@
+created: 20141117105536640
+modified: 20141117105611544
+tags: $:/tags/Stylesheet
+title: $:/Tiddler h3
+type: text/vnd.tiddlywiki
+
+h2, h3, h4 { font-weight: bold; }
