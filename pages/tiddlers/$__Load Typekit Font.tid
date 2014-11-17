@@ -1,8 +1,8 @@
 created: 20141113123219270
-modified: 20141117013241550
+modified: 20141117081321583
 tags: $:/tags/RawMarkup
-title: $:/Museo Sans Font
+title: $:/Load Typekit Font
 type: text/vnd.tiddlywiki
 
-<script src="//use.typekit.net/rem8ytc.js"></script>
+<script src="//use.typekit.net/zpc1yrj.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>

@@ -1,9 +1,9 @@
-created: 20141117015748330
+created: 20141117082335464
 description: A blue theme
-modified: 20141117082656739
+modified: 20141117082351772
 name: Blue
 tags: $:/tags/Palette
-title: $:/palettes/Blue
+title: $:/palettes/Blue_Better_Background
 type: application/x-tiddler-dictionary
 
 alert-background: #ffe476
@@ -44,7 +44,7 @@ modal-header-border: #eeeeee
 muted-foreground: #999999
 notification-background: #ffffdd
 notification-border: #999999
-page-background: #ddeaef
+page-background: #ddddff
 pre-background: #f5f5f5
 pre-border: #cccccc
 primary: #da646e
