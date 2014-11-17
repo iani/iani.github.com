@@ -1,6 +1,6 @@
-created: 20141117015407573
+created: 20141117015748330
 description: A blue theme
-modified: 20141117015406403
+modified: 20141117015747143
 name: Blue
 tags: $:/tags/Palette
 title: $:/palettes/Blue
@@ -29,8 +29,8 @@ external-link-background-hover: inherit
 external-link-background-visited: inherit
 external-link-background: inherit
 external-link-foreground-hover: inherit
-external-link-foreground-visited: #0000aa
-external-link-foreground: #0000ee
+external-link-foreground-visited: #737374
+external-link-foreground: #c1c2c5
 foreground: #333353
 message-background: #ecf2ff
 message-border: #cfd6e6
