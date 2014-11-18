@@ -1,5 +1,5 @@
 created: 20141116151044328
-modified: 20141117094417040
+modified: 20141118062536469
 title: Static Site Generator Reviews
 type: text/vnd.tiddlywiki
 
@@ -9,7 +9,7 @@ http://codecondo.com/7-static-site-generators-for-building-websites-blogs/
 
 * Jekyll
 * Octopress
-* DocPad
+* ~DocPad
 * Pelican
 * Middleman
 * Wintersmith
