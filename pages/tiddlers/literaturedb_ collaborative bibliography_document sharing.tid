@@ -1,0 +1,43 @@
+created: 20141118163957574
+modified: 20141118164327987
+tags: [[Online Collaboration Tools]]
+title: literaturedb: collaborative bibliography/document sharing
+type: text/vnd.tiddlywiki
+
+https://github.com/uwol/literaturedb/
+
+From the README file: 
+
+literaturedb is a bibliographic management software that helps you organize your literature and bibliographic references for scientific documents. It runs as a PHP web site and provides a collaborative space for storing and sharing documents and references.
+
+For running your own installation of literaturedb you need an web hosting with the following specifications:
+
+# PHP 5.3 or newer
+# MySQL 4.1 or newer
+# UTF8 has to be enabled in PHP and MySQL for special characters
+
+!! Features:
+
+* Simplicity: You will find all options on just four pages.
+simplicity
+
+* Bibtex: It uses Bibtex entry types so you can reuse references.
+bibtex
+
+* Full text: It stores full text files (pdf, doc, etc.) for quick access.
+
+* Exports: Export to Word, Bibtex, Endnote, MODS and RIS.
+
+* Collaborate: Share documents in your team and with friends.
+
+* Search function: Find documents with the search function.
+
+* Tagging: You can tag each document with keywords.
+
+* Small footprint: It is 580px wide so it fits besides a word processor.
+
+* Customize: Reuse the CSS design of your organization.
+
+* FLOSS: It is free and open source (GPL).
+
+* LDAP: Reuse the user management of your organization.
