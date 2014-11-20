@@ -1,0 +1,22 @@
+created: 20141120093958364
+modified: 20141120094810919
+tags: Productivity orgmode
+title: Fast Notes+Todos
+type: text/vnd.tiddlywiki
+
+Shell scripts that open yi editor on a file named "notes.org" and prepend an org-template for a note or todo:
+
+!! Note
+```
+cd ~/Dropbox/000WORKFILES/NOTES/
+echo "* \t:unfiled:\n :PROPERTIES:\n :DATE: <`date +\"%Y-%m-%d %a %H:%M\"`>\n :END:\n" | cat - "notes.org"  > /tmp/out && mv /tmp/out "notes.org"
+yi notes.org
+```
+!! TODO
+```
+cd ~/Dropbox/000WORKFILES/NOTES/
+echo "* TODO \t:unfiled:\n :PROPERTIES:\n :DATE: <`date +\"%Y-%m-%d %a %H:%M\"`>\n :END:\n" | cat - "notes.org"  > /tmp/out && mv /tmp/out "notes.org"
+yi notes.org
+```
+
+The new entry is tagged "unfiled" for use with tag-search tools in Org mode.
