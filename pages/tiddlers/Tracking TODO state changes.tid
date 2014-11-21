@@ -1,0 +1,33 @@
+created: 20141121100415371
+modified: 20141121104706219
+tags: [[Org mode]]
+title: Tracking TODO state changes
+type: text/vnd.tiddlywiki
+
+Notes from http://orgmode.org/manual/Tracking-TODO-state-changes.html
+
+Explaining the meanings of ``@``, ``!``, ``@/!`` in: 
+
+```
+setq org-todo-keywords
+       '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+```
+
+The meanings of ``@``, ``!`` and ``@/!`` are: 
+
+; ``!`` (Example: ``"DONE(d!)``)
+: Add a timestamp in a drawer, whenever the entry //enters// the ``DONE`` state.
+; ``@`` (Example: ``"CANCELLED(c@)"``)
+: Add a timestamp in a drawer, whenever the entry //enters// the ``CANCELLED`` state, //and additionally add a note to the drawer about the state change, by interactively requesting the user to enter a comment//. 
+; ``@/!`` (Example: ``"WAIT(w@/!)"``)
+: Add a timestamp ''with note'' whenever the entry enters the ``WAIT`` state, //and additionally record a timestamp when __leaving__ the ``WAIT`` state if and only if the __target__ state does not configure logging for entering it//.
+
+To summarize: 
+
+; ``@``
+: Add timestamp
+; ``!``
+: Add timestamp+note
+
+; ``/!``
+: Add timestamp+note when leaving the correspondong state.
