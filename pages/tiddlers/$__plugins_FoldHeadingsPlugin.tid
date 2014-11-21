@@ -1,0 +1,69 @@
+created: 20141121064840534
+modified: 20141121064957642
+tags: $:/Plugins
+title: $:/plugins/FoldHeadingsPlugin
+type: application/javascript
+
+version.extensions.FoldHeadingsPlugin= {major: 1, minor: 1, revision: 2, date: new Date(2009,11,30)};
+
+config.macros.foldHeadings = {
+	guideText: "opened|closed className",
+	showtip: "click to show '%0'",
+	hidetip: "click to hide '%0'",
+	showlabel: "more...",
+	hidelabel: "[x]",
+	html: "<span style='float:right;font-weight:normal;font-size:80%;' class='TiddlyLinkExisting'>%0&nbsp;</span>",
+	handler: function(place,macroName,params) {
+		var show=params[0] && params.shift().toLowerCase()!="closed";
+		if (params.length) { // if filtering by tag(s)
+			var here=story.findContainingTiddler(place);
+			if (here) var tid=store.getTiddler(here.getAttribute("tiddler"));
+			if (!tid || !tid.tags.containsAny(params)) return; // in a tiddler and not tagged... do nothing...
+		}
+		var elems=place.parentNode.getElementsByTagName("*");
+		var heads=[]; for (var i=0; i<elems.length; i++) { // get non-foldable heading elements
+			var n=elems[i].nodeName; var foldable=hasClass(elems[i],"foldable");
+			if ((n=="H1"||n=="H2"||n=="H3"||n=="H4"||n=="H5")&&!foldable)
+				heads.push(elems[i]);
+			}
+		for (var i=0; i<heads.length; i++) { var h=heads[i]; // for each heading element...
+			// find start/end of section content (up to next heading or end of content)
+			var start=end=h.nextSibling; while (end && end.nextSibling) {
+				var n=end.nextSibling.nodeName.toUpperCase();
+				if (n=="H1"||n=="H2"||n=="H3"||n=="H4"||n=="H5") break;
+				end=end.nextSibling;
+			}
+			if (start && hasClass(start,"sliderPanel")||hasClass(start,"floatingPanel")) continue; // heading is already a slider!
+			var span=createTiddlyElement(null,"span",null,"sliderPanel"); // create container
+			span.style.display=show?"inline":"none"; // set initial display state
+			h.parentNode.insertBefore(span,start); // and insert it following the heading element
+			// move section elements into container...
+			var e=start; while (e) { var next=e.nextSibling; span.insertBefore(e,null); if (e==end) break; e=next; }
+			// set heading label/tip/cursor...
+			h.title=(show?this.hidetip:this.showtip).format([h.textContent])
+			h.innerHTML=this.html.format([show?this.hidelabel:this.showlabel])+h.innerHTML;
+			h.style.cursor='pointer';
+			addClass(h,"foldable"); // so we know it been done (and to add extra styles)
+			h.onclick=function() {
+				var panel=this.nextSibling; var show=panel.style.display=="none";
+				// update panel display state
+				if (config.options.chkAnimate) anim.startAnimating(new Slider(panel,show));
+				else panel.style.display = show?"inline":"none";
+				// update heading label/tip
+				this.removeChild(this.firstChild); // remove existing label
+				var fh=config.macros.foldHeadings; // abbreviation for readability...
+				this.title=(show?fh.hidetip:fh.showtip).format([this.textContent])
+				this.innerHTML=fh.html.format([show?fh.hidelabel:fh.showlabel])+this.innerHTML;
+			}
+		}		
+	}
+}
+
+if (story.scrollToSection) {
+Story.prototype.foldheadings_scrollToSection=Story.prototype.scrollToSection;
+Story.prototype.scrollToSection=function(title,section) {
+	var e=this.foldheadings_scrollToSection.apply(this,arguments);
+	// if scrolling to a folded section heading, click to expand it
+	if (e && hasClass(e,'foldable') && e.nextSibling.style.display=='none') e.onclick();
+}
+}
