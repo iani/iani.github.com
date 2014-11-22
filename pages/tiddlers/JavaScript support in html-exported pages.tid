@@ -1,0 +1,16 @@
+created: 20141122103421197
+modified: 20141122103536270
+tags: [[Org mode]]
+title: JavaScript support in html-exported pages
+type: text/vnd.tiddlywiki
+
+http://orgmode.org/manual/JavaScript-support.html
+
+
+<<<
+All it then takes to use this program is adding a single line to the Org file:
+<<<
+
+```
+     #+INFOJS_OPT: view:info toc:nil
+```

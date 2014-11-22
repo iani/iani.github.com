@@ -1,0 +1,24 @@
+created: 20141121135247987
+modified: 20141121135505023
+tags: MobileOrg
+title: MobileOrg-Emacs auto-sync
+type: text/vnd.tiddlywiki
+
+http://kenmankoff.com/2012/08/17/emacs-org-mode-and-mobileorg-auto-sync/
+
+On Emacs, check every 30" if MobileOrg has pushed new data, and pull in the new data if needed: 
+
+```
+
+(defun install-monitor (file secs)
+  (run-with-timer
+   0 secs
+   (lambda (f p)
+     (unless (< p (second (time-since (elt (file-attributes f) 5))))
+       (org-mobile-pull)))
+   file secs))
+
+(defvar monitor-timer
+  (install-monitor (concat org-mobile-directory "/mobileorg.org") 30)
+  "Check if file changed every 30 s.")
+```

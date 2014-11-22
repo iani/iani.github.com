@@ -1,9 +1,11 @@
 created: 20141121134029868
-modified: 20141121134143783
+modified: 20141121135528617
 tags: [[Org mode]]
 title: MobileOrg
 type: text/vnd.tiddlywiki
 
-Emacs-MobileOrg auto-sync: http://kenmankoff.com/2012/08/17/emacs-org-mode-and-mobileorg-auto-sync/
+<div class="tc-table-of-contents">
 
-Setup instructions: http://blog.gabrielsaldana.org/mobileorg-for-android-setup-and-workflow/
+<<toc-selective-expandable 'MobileOrg'>>
+
+</div>
