@@ -1,0 +1,11 @@
+created: 20141123224010689
+modified: 20141123224335769
+tags: [[Website Development Tools]]
+title: orgmode export from shell
+type: text/vnd.tiddlywiki
+
+https://github.com/nhoffman/org-export
+
+<<<
+org-export: batch export of org-mode files from the command line
+<<<
