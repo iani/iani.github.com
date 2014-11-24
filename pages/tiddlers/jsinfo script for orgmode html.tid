@@ -1,0 +1,12 @@
+created: 20141124144328638
+modified: 20141124144609448
+tags: [[Website Development Tools]] [[Org mode]]
+title: jsinfo script for orgmode html
+type: text/vnd.tiddlywiki
+
+* http://orgmode.org/manual/JavaScript-support.html
+* http://orgmode.org/worg/org-info-js.html
+
+<<<
+a JavaScript program especially designed to enhance the web viewing experience of HTML files created with Org. This program allows you to view large files in two different ways. The first one is an Info-like mode where each section is displayed separately and navigation can be done with the n and p keys (and some other keys as well, press ? for an overview of the available keys). The second view type is a folding view much like Org provides inside Emacs. The script is available at http://orgmode.org/org-info.js and you can find the documentation for it at http://orgmode.org/worg/code/org-info-js/. We host the script at our site, but if you use it a lot, you might not want to be dependent on http://orgmode.org and prefer to install a local copy on your own web server.
+<<<
