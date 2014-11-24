@@ -1,6 +1,6 @@
 created: 20141124060606219
 description: High contrast and unambiguous
-modified: 20141124061054127
+modified: 20141124061721101
 name: Monochrome IZ (v1)
 tags: $:/tags/Palette
 title: $:/palettes/Monochrome_IZ1
@@ -29,8 +29,8 @@ external-link-background-hover: inherit
 external-link-background-visited: inherit
 external-link-background: inherit
 external-link-foreground-hover: inherit
-external-link-foreground-visited: #0000aa
-external-link-foreground: #0000ee
+external-link-foreground-visited: #c0c0c0
+external-link-foreground: #c0c0c0
 foreground: #333333
 message-background: #ecf2ff
 message-border: #cfd6e6
@@ -52,7 +52,7 @@ sidebar-button-foreground: <<colour foreground>>
 sidebar-controls-foreground-hover: #000000
 sidebar-controls-foreground: #ffffff
 sidebar-foreground-shadow: rgba(255,0,0, 0.5)
-sidebar-foreground: #ffffff
+sidebar-foreground: #929292
 sidebar-muted-foreground-hover: #444444
 sidebar-muted-foreground: #c0c0c0
 sidebar-tab-background-selected: #ececec
