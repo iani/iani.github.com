@@ -1,0 +1,12 @@
+created: 20141125112037569
+modified: 20141125112102661
+tags: [[js scripts]]
+title: scrolldeck
+type: text/vnd.tiddlywiki
+
+http://johnpolacek.github.io/scrolldeck.js/
+
+<<<
+A jQuery plugin for making scrolling presentation decks 
+For example: animations, fullscreen images or parallaxing
+<<<

@@ -1,9 +1,10 @@
 created: 20141124144328638
-modified: 20141124144609448
-tags: [[Website Development Tools]] [[Org mode]]
+modified: 20141125073408602
+tags: [[Org mode]] [[js scripts]]
 title: jsinfo script for orgmode html
 type: text/vnd.tiddlywiki
 
+* https://github.com/SebastianRose/org-info-js
 * http://orgmode.org/manual/JavaScript-support.html
 * http://orgmode.org/worg/org-info-js.html
 
