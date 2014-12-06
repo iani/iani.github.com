@@ -1,10 +1,13 @@
 created: 20141110133942473
-modified: 20141117135256467
+modified: 20141206100306207
 tags: contents
 title: Favorite Blogs
 type: text/vnd.tiddlywiki
 
-* http://johncarlosbaez.wordpress.com/
-* http://jeremydenk.net/blog/
-* http://stinathina.wordpress.com/
-* http://cedricvillani.org/ (https://www.youtube.com/watch?v=U3kKjGKp9rA)
+<<tabs "[tag[Favorite Blogs]]" "" "">>
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'Favorite Blogs'>>
+
+</div>
