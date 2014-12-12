@@ -1,0 +1,9 @@
+created: 20141210081444774
+modified: 20141210081613626
+title: Paths for Installing LaTeX Styles
+type: text/vnd.tiddlywiki
+
+On MacOs X10.10 one location is:
+/usr/local/texlive/2013/texmf-dist/tex/latex/base/
+
+See also: /usr/local/texlive/2013/texmf-dist/tex/latex/base/

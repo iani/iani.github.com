@@ -1,11 +1,11 @@
 created: 20141106180008824
-modified: 20141117151218983
+modified: 20141211231659795
 tags: $:/tags/Stylesheet
 title: $:/TitleFont
 type: text/vnd.tiddlywiki
 
 html span.tc-title{
   ## color: #F84;
-  font-family: "freight-sans-pro", sans-serif;
+  font-family: "hypatia-sans-pro", sans-serif;
   ## font-weight: bold;
 }
