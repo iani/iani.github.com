@@ -1,6 +1,6 @@
 created: 20141110135241813
-modified: 20141211225751238
+modified: 20150116072137719
 title: $:/themes/tiddlywiki/vanilla/settings/fontfamily
 type: text/vnd.tiddlywiki
 
-"hypatia-sans-pro", "ff-dagny-web-pro", "museo-sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+'hypatia-sans-pro', sans-serif
