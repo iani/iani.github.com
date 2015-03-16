@@ -1,0 +1,12 @@
+created: 20150316215748110
+modified: 20150316215906238
+title: JS Info for cool HTML site generation
+type: text/vnd.tiddlywiki
+
+Include this option line in the header of your org file: 
+
+```
+#+INFOJS_OPT: view:info toc:6
+```
+
+For more info about how to configure INFOJS see: http://orgmode.org/worg/code/org-info-js/
